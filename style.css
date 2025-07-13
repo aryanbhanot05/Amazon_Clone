@@ -1,0 +1,368 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.body{
+    position: relative;
+    box-sizing: border-box;
+}
+
+.nav-border {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    z-index: 3;
+}
+
+.nav-border:hover {
+    border: 1px solid white;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.nav-margin {
+    margin: 0 5px;
+}
+
+.panel-padding {
+    padding: 5px;
+    white-space: nowrap;
+}
+
+header{
+    color: white;
+}
+
+nav {
+    height: 60px;
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    min-width: 1050px;
+}
+
+.nav-logo,
+.nav-loc {
+    height: 50px;
+    padding: 0 8px 0 0;
+    cursor: pointer;
+}
+
+.nav-loc {
+    width: 195px;
+}
+
+.fa-solid {
+    margin: 5px;
+}
+
+.logo {
+    background-image: url(assets/amazon_logo.png);
+    height: 57px;
+    width: 106px;
+    background-repeat: no-repeat;
+    background-size: 113%;
+    background-position-x: -5px;
+}
+
+.nav-1 .logo-ext {
+    font-size: 14px;
+    text-decoration: none;
+    margin: 6px 0 0 0;
+    color: white;
+}
+
+.a {
+    font-size: 12px;
+    color: #cccccc;
+}
+
+.b {
+    font-size: 14px;
+}
+
+.nav-1,
+.nav-2 {
+    height: 43px;
+}
+
+.nav-2:hover {
+    border: 2px solid orange;
+    border-radius: 7px;
+}
+
+.search-cats {
+    width: 50px;
+    overflow: hidden;
+    height: 40px;
+    text-align: center;
+    border: none;
+    background-color: #f3f3f3;
+    color: black;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-search {
+    width: max(160px,100vw - 900px);
+    height: 40px;
+    border: none;
+    border-left: 1px solid rgb(199, 196, 196);
+    padding-left: 5px;
+}
+
+.search-icon {
+    background-color: rgb(248, 175, 80);
+    width: 40px;
+    border: none;
+    height: 40px;
+    color: black;
+    border-radius: 0 5px 5px 0;
+    margin: 0;
+}
+
+.nav-2:hover .search-cats {
+    cursor: pointer;
+    background-color: #ebebeb;
+}
+
+.nav-2:hover .search-icon {
+    background-color: rgb(229, 166, 83);
+    cursor: pointer;
+}
+
+.lang-sec {
+    height: 50px;
+    padding: 5px;
+    padding-right: 1px;
+    position: relative;
+    z-index: 7;
+}
+
+.lang-sec .flag {
+    background-image: url(assets/ind.jpg);
+    height: 14px;
+    width: 21px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.lang-sec .lang {
+    width: 41px;
+    border: none;
+    background-color: transparent;
+}
+
+.oth-lang {
+    position: absolute;
+    visibility: hidden;
+    top: 45px;
+    max-width: 160px;
+    align-items: start;
+    width: 160px;
+    background-color: #f3f3f3;
+    border: 1px solid rgb(205, 204, 204);
+    border-radius: 3px;
+    padding: 5px;
+    line-height: 25px;
+    left: -1px;
+    z-index: 5;
+}
+
+.oth-lang a {
+    color: black;
+    text-decoration: none;
+}
+
+.overlay {
+    position: absolute;
+    background-color: black;
+    height: 1500px;
+    width: 100%;
+    z-index: 6;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.lang-sec:hover ~ .overlay {
+    top: 90px;
+    opacity: 0.7;
+}
+
+.lang-sec:hover .oth-lang {
+    visibility: visible;
+    transition: visibility 0.5s ease 0.2s;
+}
+
+.oth-lang a:hover input[type="radio"] {
+    position: relative;
+}
+
+.oth-lang a:hover input[type="radio"]::before {
+    content: "";
+    position: absolute;
+    top: 49%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: #0f62fe;
+}
+
+.SignIn,
+.Orders {
+    padding: 5px;
+    height: 50px;
+}
+
+.SignIn {
+    width: 170px;
+}
+
+.Orders {
+    width: 88px;
+}
+
+.cart{
+    position: relative;
+    padding: 19px 5px 5px 5px;
+}
+
+.cart-img{   
+    scale: 1.6;
+}
+
+.nop{
+    position: absolute;
+    z-index: 5;
+    color: orange;
+    top: 3px;
+    left: 16px;
+}
+
+.panel {
+    background-color: #172433;
+    justify-content: left;
+    height: 30px;
+    min-width: 1050px;
+    padding: 3px;
+    position: relative;
+}
+
+.all-panel {
+    padding: 1.2px 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+.side-panel {
+    position: fixed;
+    z-index: 10;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    top: 0px;
+    left: -365px;
+    height: 100vh;
+    width: 365px;
+    transition: left 0.5s ease;
+}
+
+.all-panel:hover ~ .side-panel {
+    left: 0px;
+}
+
+main {
+    position: relative;
+}
+
+.herofade {
+    background-image: linear-gradient(transparent 0% 25%, rgba(221, 219, 219, 0.54) 70%, rgb(221, 219, 219) 100% );
+    width: 100vw;
+    min-width: 1050px;
+    height: 360px;
+    z-index: 1;
+    position: absolute;
+}
+
+.hero {
+    background-image: url(assets/hero_image.jpg);
+    background-size: cover;
+    width: 100vw;
+    min-width: 1050px;
+    height: 360px;
+    background-color: rgb(221, 219, 219);
+    position: relative;
+    
+}
+
+.banner {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    margin: 0% 10%;
+    z-index: 2;
+    padding: 10px 5px;
+    width: 80%;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.shopping {
+    gap: 2%;
+    flex-wrap: wrap;
+    z-index: 5;
+    position: absolute;
+    top: 250px;
+}
+
+.shopping-bgc {
+    background-color: rgb(221, 219, 219);
+    min-width: 1050px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+}
+
+.box {
+    width: 22.5%;
+    margin-bottom: 2%;
+    height: 28vw;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    align-items: normal;
+    padding: 10px;
+}
+
+.box img {
+    margin: 5px auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 100%;
+}
+
+.box a {
+    text-decoration: none;
+    font-size: 14px;
+}
