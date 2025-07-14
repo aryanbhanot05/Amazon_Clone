@@ -17,7 +17,6 @@ This project was built using core front-end technologies:
 
 * **HTML5**: For structuring the content and layout.
 * **CSS3**: For styling, layout, and responsive design.
-* **JavaScript**: For interactive elements and functionality.
 
 ---
 
