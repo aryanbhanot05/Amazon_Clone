@@ -47,14 +47,11 @@ You just need a modern web browser like Google Chrome, Firefox, or Safari.
 
 Here are a few snapshots of the project.
 
-*(Here you can add screenshots of your project. You can drag and drop images directly into the README editor on GitHub to upload them!)*
-
 **Homepage View**
-![Homepage](https://via.placeholder.com/800x400.png?text=Add+Your+Screenshot+Here)
+![Homepage](./assets/Home.png)
 
-**Product Section**
-![Products](https://via.placeholder.com/800x400.png?text=Add+Your+Screenshot+Here)
-
+**Language Dropdown**
+![Products](./assets/dropdown_working.png)
 
 ---
 
