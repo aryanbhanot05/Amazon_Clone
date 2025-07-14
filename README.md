@@ -55,8 +55,10 @@ Here are a few snapshots of the project.
 
 ---
 
-## Contact
+## 📞 Contact
 
 Aryan Bhanot - aryanbhanot05@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/aryan-bhanot-609650245/
 
 Project Link: [https://github.com/aryanbhanot05/Amazon_Clone](https://github.com/aryanbhanot05/Amazon_Clone)
